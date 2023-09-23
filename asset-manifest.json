@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/role_cards_creatures/static/css/main.e9941fca.css",
-    "main.js": "/role_cards_creatures/static/js/main.f8697949.js",
+    "main.css": "/role_cards_creatures/static/css/main.dc11ade1.css",
+    "main.js": "/role_cards_creatures/static/js/main.b62261e5.js",
     "static/media/Гнолл клык йеногу.png": "/role_cards_creatures/static/media/Гнолл клык йеногу.18a809b7c4cb8f5f0aaa.png",
     "static/media/Некромант.png": "/role_cards_creatures/static/media/Некромант.3da4904ab120df2e77d3.png",
     "static/media/Мастер вор.png": "/role_cards_creatures/static/media/Мастер вор.52af69d1fcbdf775c224.png",
@@ -740,11 +740,11 @@
     "static/media/Change.svg": "/role_cards_creatures/static/media/Change.d2ee68cc10dd187f05c77dcb242a8ce6.svg",
     "static/media/Download.svg": "/role_cards_creatures/static/media/Download.2c12be50f262402ed0b6824ddad9d049.svg",
     "index.html": "/role_cards_creatures/index.html",
-    "main.e9941fca.css.map": "/role_cards_creatures/static/css/main.e9941fca.css.map",
-    "main.f8697949.js.map": "/role_cards_creatures/static/js/main.f8697949.js.map"
+    "main.dc11ade1.css.map": "/role_cards_creatures/static/css/main.dc11ade1.css.map",
+    "main.b62261e5.js.map": "/role_cards_creatures/static/js/main.b62261e5.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9941fca.css",
-    "static/js/main.f8697949.js"
+    "static/css/main.dc11ade1.css",
+    "static/js/main.b62261e5.js"
   ]
 }
