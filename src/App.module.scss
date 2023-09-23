@@ -92,7 +92,7 @@
                 max-height: 20vh;
                 background-color: var(--color1);
                 width: 37vh;
-                overflow-y: hidden;
+                overflow-y: scroll;
                 overflow-x: hidden;
                 border-radius: 0 0 2vh 2vh;
                 padding-bottom: 0.5vh;
@@ -108,6 +108,9 @@
                     background-color: var(--color4);
                     cursor: pointer;
                 }
+            }
+            .TypesList::-webkit-scrollbar {
+                display: none;
             }
             .Block {
                 height: 100%;

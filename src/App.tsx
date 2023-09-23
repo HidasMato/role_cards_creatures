@@ -60,7 +60,7 @@ const App = () => {
                     {
                         showTypes &&
                         <div className={style.TypesList}>
-                            <a target="_blank" href="https://hidasmato.github.io/role_cards/"><div className={style.Type}>Главная</div></a>
+                            <a target="_blank" href="https://hidasmato.github.io/role_cards/"><div className={style.Type}>Справка</div></a>
                             <a target="_blank" href="https://hidasmato.github.io/role_cards_spells/"><div className={style.Type}>Заклинания</div></a>
                             <a target="_blank" href="https://hidasmato.github.io/role_cards_items/"><div className={style.Type}>Предметы</div></a>
                             <div className={style.Type} onClick={() => { setShowTypes(false) }}>Существа</div>
