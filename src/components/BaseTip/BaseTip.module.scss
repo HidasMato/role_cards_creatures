@@ -1,0 +1,31 @@
+.Main {
+    white-space: nowrap;
+    font-size: 1.5vh;
+    background: var(--color1);
+    border: 0.2vh solid var(--color6);
+    border-radius: 4vh;
+    display: flex;
+    width: 100%;
+    height: 2.5vh;
+    margin-top: 0.5vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0.5vh;
+    .Name {
+        width: 100%;
+        text-align: center;
+    }
+    .IMG {
+        height: 2vh;
+        width: 2vh;
+        transform: rotate(270deg);
+    }
+}
+.Target {
+    background-color: var(--color4);
+}
+.Main:hover {
+    cursor: pointer;
+    background-color: var(--color5);
+}

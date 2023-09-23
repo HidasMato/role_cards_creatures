@@ -1,0 +1,591 @@
+.BookerlyBold {
+    font-family: "BookerlyBold";
+}
+
+.BookerlyBoldItalic {
+    font-family: "BookerlyBoldItalic";
+}
+
+.BookerlyDisplayBoldItalic {
+    font-family: "BookerlyDisplayBoldItalic";
+}
+
+.BookerlyDisplay {
+    font-family: "BookerlyDisplay";
+}
+
+.BookerlyItalic {
+    font-family: "BookerlyItalic";
+}
+
+.BookerlyLightItalic {
+    font-family: "BookerlyLightItalic";
+}
+
+.BookerlyLight {
+    font-family: "BookerlyLight";
+}
+
+.Bookerly {
+    font-family: "Bookerly";
+}
+
+.EtnaFreeFont {
+    font-family: "EtnaFreeFont";
+}
+
+.GogonoCocoaMochiCyrillic {
+    font-family: "GogonoCocoaMochiCyrillic";
+}
+
+.GULAGPavljenko {
+    font-family: "GULAGPavljenko";
+}
+
+.HellasDustCyrillic {
+    font-family: "HellasDustCyrillic";
+}
+
+.MorningBreezeBold {
+    font-family: "MorningBreezeBold";
+}
+
+.MorningBreezeItalic {
+    font-family: "MorningBreezeItalic";
+}
+
+.MorningBreezeLight {
+    font-family: "MorningBreezeLight";
+}
+
+.MorningBreeze {
+    font-family: "MorningBreeze";
+}
+
+.OldSoviet {
+    font-family: "OldSoviet";
+}
+
+.SquareMeal {
+    font-family: "SquareMeal";
+}
+
+.ZarubkaTypeRegular {
+    font-family: "ZarubkaTypeRegular";
+}
+
+.ZaychikRegular {
+    font-family: "ZaychikRegular";
+}
+
+.MainBack {
+    line-height: 1;
+    overflow: hidden;
+    white-space: pre;
+    width: 100%;
+    height: 100%;
+    background-color: var(--CardBackColorObvodka);
+    padding: var(--CardBackPaddingT) var(--CardBackPaddingR) var(--CardBackPaddingB) var(--CardBackPaddingL);
+
+    .doubleBack {
+        width: calc(50% - (var(--CardBackBetweenPadding)) / 2);
+        height: 100%;
+    }
+
+    .onceBack {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Zagolovok {
+        border-top-right-radius: var(--CardBackZagolovok┐);
+        border-top-left-radius: var(--CardBackZagolovok┌);
+        border-bottom-right-radius: var(--CardBackZagolovok┘);
+        border-bottom-left-radius: var(--CardBackZagolovok└);
+        width: 100%;
+        overflow: hidden;
+        background-color: var(--CardBackZagolovokBackgroundColor);
+        height: var(--CardBackZagolovokTextSize);
+        font-size: var(--CardBackZagolovokTextFont);
+        text-align: var(--CardBackZagolovokTextAlign);
+        color: var(--CardBackZagolovokTextColor);
+        padding: 0 var(--CardBackZagolovokTextPadding);
+        display: flex;
+        align-items: center;
+
+        div {
+            width: 100%;
+        }
+    }
+
+    .Per {
+        overflow: hidden;
+        border-top-right-radius: var(--CardBackPer┐);
+        border-top-left-radius: var(--CardBackPer┌);
+        border-bottom-right-radius: var(--CardBackPer┘);
+        border-bottom-left-radius: var(--CardBackPer└);
+        background-color: var(--CardPerBackgroundColor);
+        height: var(--CardPerTextSize);
+        font-size: var(--CardPerTextFont);
+        text-align: var(--CardPerTextAlign);
+        color: var(--CardPerTextColor);
+        padding: 0 var(--CardPerTextPadding);
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        div {
+            width: 100%;
+        }
+    }
+
+    .DescMain {
+        height: calc(100% - var(--CardBackDownTextSize) - var(--CardBackZagolovokTextSize) - var(--CardPerTextSize));
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Description {
+        .myDopText {
+            width: 100%;
+        }
+
+        .Staty {
+            background-color: var(--StatsColor);
+            white-space: pre;
+            width: 100%;
+            padding: var(--StatyPaddingT) var(--StatyPaddingR) var(--StatyPaddingB) var(--StatyPaddingL);
+            .StatCase {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: calc(var(--StatHeight) / 2);
+
+                .Stat {
+                    height: 100%;
+                    width: 50%;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                }
+
+                .AC {
+                    justify-content: var(--ACAlign);
+
+                    .StatTitle {
+                        color: var(--ACTitleColor);
+                        font-size: var(--ACTitleKegl);
+                        padding: var(--ACTitlePaddingT) var(--ACTitlePaddingR) var(--ACTitlePaddingB) var(--ACTitlePaddingL);
+                    }
+
+                    .StatText {
+                        color: var(--ACTextColor);
+                        font-size: var(--ACTextKegl);
+                        padding: var(--ACTextPaddingT) var(--ACTextPaddingR) var(--ACTextPaddingB) var(--ACTextPaddingL);
+                    }
+                }
+
+                .HP {
+                    justify-content: var(--HPAlign);
+
+                    .StatTitle {
+                        color: var(--HPTitleColor);
+                        font-size: var(--HPTitleKegl);
+                        padding: var(--HPTitlePaddingT) var(--HPTitlePaddingR) var(--HPTitlePaddingB) var(--HPTitlePaddingL);
+                    }
+
+                    .StatText {
+                        color: var(--HPTextColor);
+                        font-size: var(--HPTextKegl);
+                        padding: var(--HPTextPaddingT) var(--HPTextPaddingR) var(--HPTextPaddingB) var(--HPTextPaddingL);
+                    }
+                }
+
+                .Speed {
+                    justify-content: var(--SpeedAlign);
+
+                    .StatTitle {
+                        color: var(--SpeedTitleColor);
+                        font-size: var(--SpeedTitleKegl);
+                        padding: var(--SpeedTitlePaddingT) var(--SpeedTitlePaddingR) var(--SpeedTitlePaddingB) var(--SpeedTitlePaddingL);
+                    }
+
+                    .StatText {
+                        color: var(--SpeedTextColor);
+                        font-size: var(--SpeedTextKegl);
+                        padding: var(--SpeedTextPaddingT) var(--SpeedTextPaddingR) var(--SpeedTextPaddingB) var(--SpeedTextPaddingL);
+                    }
+                }
+
+                .Empty {
+                    justify-content: var(--EmptyAlign);
+
+                    .StatTitle {
+                        color: var(--EmptyTitleColor);
+                        font-size: var(--EmptyTitleKegl);
+                        padding: var(--EmptyTitlePaddingT) var(--EmptyTitlePaddingR) var(--EmptyTitlePaddingB) var(--EmptyTitlePaddingL);
+                    }
+
+                    .StatText {
+                        color: var(--EmptyTextColor);
+                        font-size: var(--EmptyTextKegl);
+                        padding: var(--EmptyTextPaddingT) var(--EmptyTextPaddingR) var(--EmptyTextPaddingB) var(--EmptyTextPaddingL);
+                    }
+                }
+            }
+            .StatCaseVert {
+                flex-direction: column;
+                height: var(--StatHeight);
+                .Stat {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        .Skills {
+            background-color: var(--SkilsColor);
+            display: flex;
+            width: 100%;
+            padding: var(--SkillsPaddingT) var(--SkillsPaddingR) var(--SkillsPaddingB) var(--SkillsPaddingL);
+
+            .Skill {
+                width: calc(100% / 6);
+                display: flex;
+                flex-direction: column;
+
+                .SkillTitle {
+                    display: flex;
+                    align-items: center;
+                    height: calc(var(--SkillHeight) / 2);
+                    width: 100%;
+                }
+
+                .SkillPoint {
+                    display: flex;
+                    align-items: center;
+                    height: calc(var(--SkillHeight) / 2);
+                    width: 100%;
+                }
+            }
+
+            .Sil {
+                .SkillTitle {
+                    justify-content: var(--SilTitleAlign);
+                    color: var(--SilTitleColor);
+                    font-size: var(--SilTitle);
+                }
+
+                .SkillPoint {
+                    justify-content: var(--SilTextAlign);
+                    color: var(--SilTextColor);
+                    font-size: var(--SilText);
+                }
+            }
+
+            .Lov {
+                .SkillTitle {
+                    justify-content: var(--LovTitleAlign);
+                    color: var(--LovTitleColor);
+                    font-size: var(--LovTitle);
+                }
+
+                .SkillPoint {
+                    justify-content: var(--LovTextAlign);
+                    color: var(--LovTextColor);
+                    font-size: var(--LovText);
+                }
+            }
+
+            .Tel {
+                .SkillTitle {
+                    justify-content: var(--TelTitleAlign);
+                    color: var(--TelTitleColor);
+                    font-size: var(--TelTitle);
+                }
+
+                .SkillPoint {
+                    justify-content: var(--TelTextAlign);
+                    color: var(--TelTextColor);
+                    font-size: var(--TelText);
+                }
+            }
+
+            .Int {
+                .SkillTitle {
+                    justify-content: var(--IntTitleAlign);
+                    color: var(--IntTitleColor);
+                    font-size: var(--IntTitle);
+                }
+
+                .SkillPoint {
+                    justify-content: var(--IntTextAlign);
+                    color: var(--IntTextColor);
+                    font-size: var(--IntText);
+                }
+            }
+
+            .Mdr {
+                .SkillTitle {
+                    justify-content: var(--MdrTitleAlign);
+                    color: var(--MdrTitleColor);
+                    font-size: var(--MdrTitle);
+                }
+
+                .SkillPoint {
+                    justify-content: var(--MdrTextAlign);
+                    color: var(--MdrTextColor);
+                    font-size: var(--MdrText);
+                }
+            }
+
+            .Har {
+                .SkillTitle {
+                    justify-content: var(--HarTitleAlign);
+                    color: var(--HarTitleColor);
+                    font-size: var(--HarTitle);
+                }
+
+                .SkillPoint {
+                    justify-content: var(--HarTextAlign);
+                    color: var(--HarTextColor);
+                    font-size: var(--HarText);
+                }
+            }
+        }
+
+        .Per0 {
+            background-color: var(--CardPer0BackgroundColor);
+            border-radius: var(--Per0Border┌) var(--Per0Border┐) var(--Per0Border┘) var(--Per0Border└);
+            height: var(--Per0Height);
+        }
+
+
+        .Per1 {
+            background-color: var(--CardPer1BackgroundColor);
+            border-radius: var(--Per1Border┌) var(--Per1Border┐) var(--Per1Border┘) var(--Per1Border└);
+            height: var(--Per1Height);
+        }
+
+        .Per2 {
+            background-color: var(--CardPer2BackgroundColor);
+            border-radius: var(--Per2Border┌) var(--Per2Border┐) var(--Per2Border┘) var(--Per2Border└);
+            height: var(--Per2Height);
+        }
+
+        .Per3 {
+            background-color: var(--CardPer3BackgroundColor);
+            border-radius: var(--Per3Border┌) var(--Per3Border┐) var(--Per3Border┘) var(--Per3Border└);
+            height: var(--Per3Height);
+        }
+
+        .Per4 {
+            background-color: var(--CardPer4BackgroundColor);
+            border-radius: var(--Per4Border┌) var(--Per4Border┐) var(--Per4Border┘) var(--Per4Border└);
+            height: var(--Per4Height);
+        }
+
+        .Text1 {
+            text-align: var(--CardBackDescriptionText1Align);
+            background-color: var(--Text1BackgroundColor);
+            color: var(--Text1Color);
+            padding: var(--TextPaddingT) var(--TextPaddingR) var(--TextPaddingB) var(--TextPaddingL);
+        }
+
+        .Text2 {
+            text-align: var(--CardBackDescriptionText2Align);
+            background-color: var(--Text2BackgroundColor);
+            color: var(--Text2Color);
+            padding: var(--TextPaddingT) var(--TextPaddingR) var(--TextPaddingB) var(--TextPaddingL);
+        }
+
+        .Text3 {
+            text-align: var(--CardBackDescriptionText3Align);
+            background-color: var(--Text3BackgroundColor);
+            color: var(--Text3Color);
+            padding: var(--TextPaddingT) var(--TextPaddingR) var(--TextPaddingB) var(--TextPaddingL);
+        }
+
+        .Text4 {
+            text-align: var(--CardBackDescriptionText4Align);
+            background-color: var(--Text4BackgroundColor);
+            color: var(--Text4Color);
+            padding: var(--TextPaddingT) var(--TextPaddingR) var(--TextPaddingB) var(--TextPaddingL);
+        }
+
+        .TextTitle2 {
+            text-align: var(--CardBackDescriptionTitle2Align);
+            background-color: var(--Text2BackgroundColor);
+            color: var(--Title2Color);
+            font-size: var(--Title2Kegl);
+            padding: var(--CardBackDescriptionPaddingT) var(--CardBackDescriptionPaddingR) var(--CardBackDescriptionPaddingB) var(--CardBackDescriptionPaddingL);
+        }
+
+        .TextTitle3 {
+            text-align: var(--CardBackDescriptionTitle3Align);
+            background-color: var(--Text3BackgroundColor);
+            color: var(--Title3Color);
+            font-size: var(--Title3Kegl);
+            padding: var(--CardBackDescriptionPaddingT) var(--CardBackDescriptionPaddingR) var(--CardBackDescriptionPaddingB) var(--CardBackDescriptionPaddingL);
+        }
+
+        .TextTitle4 {
+            text-align: var(--CardBackDescriptionTitle4Align);
+            background-color: var(--Text4BackgroundColor);
+            color: var(--Title4Color);
+            font-size: var(--Title4Kegl);
+            padding: var(--CardBackDescriptionPaddingT) var(--CardBackDescriptionPaddingR) var(--CardBackDescriptionPaddingB) var(--CardBackDescriptionPaddingL);
+        }
+
+        .CardControl {
+            width: 100%;
+        }
+
+        line-height: var(--LineHeight);
+        border-top-right-radius: var(--CardBackInside┐);
+        border-top-left-radius: var(--CardBackInside┌);
+        border-bottom-right-radius: var(--CardBackInside┘);
+        border-bottom-left-radius: var(--CardBackInside└);
+        overflow: hidden;
+        height: 100%;
+        background-color: var(--CardBackDescriptionBackgroundColor);
+        white-space:pre-wrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+        font-size: var(--CardBackDescriptionFont);
+        color: var(--CardBackDescriptionColor);
+    }
+    .Description2 {
+        border-top-right-radius: var(--CardBackInside2┐);
+        border-top-left-radius: var(--CardBackInside2┌);
+        border-bottom-right-radius: var(--CardBackInside2┘);
+        border-bottom-left-radius: var(--CardBackInside2└);
+    }
+
+    .DowtText {
+        overflow: hidden;
+        background-color: var(--CardBackDownBackgroundColor);
+        border-top-right-radius: var(--CardBackDown┐);
+        border-top-left-radius: var(--CardBackDown┌);
+        border-bottom-right-radius: var(--CardBackDown┘);
+        border-bottom-left-radius: var(--CardBackDown└);
+        height: var(--CardBackDownTextSize);
+        font-size: var(--CardBackDownTextFont);
+        text-align: var(--CardBackDownTextAlign);
+        color: var(--CardBackDownTextColor);
+        padding: 0 var(--CardBackDownTextPadding);
+        display: flex;
+        justify-content: var(--CardBackDownTextAlign);
+        align-items: end;
+    }
+    .Pop {
+        .Per {
+            display: none;
+        }
+    }
+}
+
+.Main {
+    line-height: 1;
+    overflow: hidden;
+    white-space: pre;
+    width: 100%;
+    height: 100%;
+    background-color: var(--CardColorObvodka);
+    border-right: var(--LineCut) solid var(--ListColor);
+    border-bottom: var(--LineCut) solid var(--ListColor);
+    padding: var(--CardPaddingT) var(--CardPaddingR) var(--CardPaddingB) var(--CardPaddingL);
+
+    .Zagolovok {
+        overflow: hidden;
+        background-color: var(--CardZagolovokBackgroundColor);
+        border-top-right-radius: var(--CardZagolovok┐);
+        border-top-left-radius: var(--CardZagolovok┌);
+        border-bottom-right-radius: var(--CardZagolovok┘);
+        border-bottom-left-radius: var(--CardZagolovok└);
+        height: var(--CardZagolovokTextSize);
+        font-size: var(--CardZagolovokTextFont);
+        text-align: var(--CardZagolovokTextAlign);
+        color: var(--CardZagolovokTextColor);
+        padding: 0 var(--CardZagolovokTextPadding);
+        display: flex;
+        justify-content: var(--CardZagolovokTextAlign);
+        align-items: center;
+    }
+
+    .Inside {
+        overflow: hidden;
+        height: calc(100% - var(--CardZagolovokTextSize) - var(--CardDownTextSize));
+        border-top-right-radius: var(--CardInside┐);
+        border-top-left-radius: var(--CardInside┌);
+        border-bottom-right-radius: var(--CardInside┘);
+        border-bottom-left-radius: var(--CardInside└);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--CardDescriptionBackgroundColor);
+        position: relative;
+        padding: var(--ImgPaddingT) var(--ImgPaddingR) var(--ImgPaddingB) var(--ImgPaddingL);
+
+        .MyImg {
+            height: var(--ImgHeight);
+            width: var(--ImgWidth);
+            transform: rotate(var(--ImgRotate));
+        }
+
+        .Description {
+            img {
+                position: absolute;
+                width: 100%;
+                right: 0;
+                bottom: 0;
+                height: 100%;
+                z-index: 0;
+            }
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            div {
+                z-index: 1;
+                width: 100%;
+
+                img {
+                    padding: 0;
+                }
+            }
+
+            white-space: pre-wrap;
+            display: flex;
+            text-align: var(--CardDescriptionTextAlign);
+            align-items: center;
+            width: 100%;
+            font-size: var(--CardDescriptionFont);
+            color: var(--CardDescriptionColor);
+            padding: var(--CardDescriptionPaddingT) var(--CardDescriptionPaddingR) var(--CardDescriptionPaddingB) var(--CardDescriptionPaddingL);
+        }
+    }
+
+    .DowtText {
+        overflow: hidden;
+        background-color: var(--CardDownBackgroundColor);
+        border-top-right-radius: var(--CardDown┐);
+        border-top-left-radius: var(--CardDown┌);
+        border-bottom-right-radius: var(--CardDown┘);
+        border-bottom-left-radius: var(--CardDown└);
+        height: var(--CardDownTextSize);
+        font-size: var(--CardDownTextFont);
+        text-align: var(--CardDownTextAlign);
+        color: var(--CardDownTextColor);
+        padding: 0 var(--CardDownTextPadding);
+        display: flex;
+        justify-content: var(--CardDownTextAlign);
+        align-items: end;
+    }
+}
