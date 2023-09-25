@@ -3027,9 +3027,9 @@ const SpellMain = ({ }: AlertProps): JSX.Element => {
                     <OptionCase nameSetting={'Выбор свитка'} targetThis={targetOption[4]} setTarget={setTarget} number={4}>
                         <>
                             <div className={style.RubahaBackNext}>
-                                <div>{svitokCaseNumber > 0 ? <button onClick={() => { setSvitokCaseNumber(svitokCaseNumber - 1) }}>Назад</button> : null}</div>
-                                <p>страница {svitokCaseNumber + 1}</p>
-                                <div>{svitokCaseNumber < 2 ? <button onClick={() => { setSvitokCaseNumber(svitokCaseNumber + 1) }}>Вперед</button> : null}</div>
+                                <div className={style.but}>{svitokCaseNumber > 0 ? <button onClick={() => { setSvitokCaseNumber(svitokCaseNumber - 1) }}>Назад</button> : null}</div>
+                                <div className={style.p}><div>страница {svitokCaseNumber + 1}</div></div>
+                                <div className={style.but}>{svitokCaseNumber < 2 ? <button onClick={() => { setSvitokCaseNumber(svitokCaseNumber + 1) }}>Вперед</button> : null}</div>
                             </div>
                             {getSvitokCase()}
                         </>
