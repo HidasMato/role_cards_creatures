@@ -53,7 +53,7 @@ const App = () => {
                         </div>
                         <div className={style.Chose}>
                             <div className={style.ChoseIn}>
-                                {"Существа"}
+                                {"Существа (БЕТА)"}
                             </div>
                         </div>
                     </div>
