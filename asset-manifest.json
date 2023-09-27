@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/role_cards_creatures/static/css/main.d4f5d24f.css",
-    "main.js": "/role_cards_creatures/static/js/main.8efa516c.js",
+    "main.css": "/role_cards_creatures/static/css/main.fb98133a.css",
+    "main.js": "/role_cards_creatures/static/js/main.addd0300.js",
     "static/media/Гнолл клык йеногу.png": "/role_cards_creatures/static/media/Гнолл клык йеногу.18a809b7c4cb8f5f0aaa.png",
     "static/media/Некромант.png": "/role_cards_creatures/static/media/Некромант.3da4904ab120df2e77d3.png",
     "static/media/Мастер вор.png": "/role_cards_creatures/static/media/Мастер вор.52af69d1fcbdf775c224.png",
@@ -737,14 +737,15 @@
     "static/media/Align_center_font_awesome.svg": "/role_cards_creatures/static/media/Align_center_font_awesome.9af5d979bed188f162cfaf220b2e7f9e.svg",
     "static/media/VK.svg": "/role_cards_creatures/static/media/VK.3e60d4ac6239f020fcab393903993970.svg",
     "static/media/ArrowDown.svg": "/role_cards_creatures/static/media/ArrowDown.55f4f7a2b5985acce14255ab5cfaa5be.svg",
+    "static/media/Boosty.svg": "/role_cards_creatures/static/media/Boosty.7412879df1b69c45bac8e98b21bdda17.svg",
     "static/media/Change.svg": "/role_cards_creatures/static/media/Change.d2ee68cc10dd187f05c77dcb242a8ce6.svg",
     "static/media/Download.svg": "/role_cards_creatures/static/media/Download.2c12be50f262402ed0b6824ddad9d049.svg",
     "index.html": "/role_cards_creatures/index.html",
-    "main.d4f5d24f.css.map": "/role_cards_creatures/static/css/main.d4f5d24f.css.map",
-    "main.8efa516c.js.map": "/role_cards_creatures/static/js/main.8efa516c.js.map"
+    "main.fb98133a.css.map": "/role_cards_creatures/static/css/main.fb98133a.css.map",
+    "main.addd0300.js.map": "/role_cards_creatures/static/js/main.addd0300.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4f5d24f.css",
-    "static/js/main.8efa516c.js"
+    "static/css/main.fb98133a.css",
+    "static/js/main.addd0300.js"
   ]
 }
