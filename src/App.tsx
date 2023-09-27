@@ -5,6 +5,7 @@ import CreatureMain from './components/CreatureMain/CreatureMain';
 import { ReactComponent as GH } from './images/GH.svg';
 import { ReactComponent as YD } from './images/YD.svg';
 import { ReactComponent as VK } from './images/VK.svg';
+import { ReactComponent as Boosty } from './images/Boosty.svg';
 import './fonts/Bookerly Bold Italic.ttf';
 import './fonts/Bookerly Bold.ttf';
 import './fonts/Bookerly Display Bold Italic.ttf';
@@ -69,20 +70,21 @@ const App = () => {
                 </div>
                 <div className={style.Slk}>
                     <div className={style.U}>{"Ссылки на ресурсы:\nЏ"}</div>
-                    <a onMouseOver={() => { setShowMyOpis([true, false, false]) }} onMouseOut={() => { setShowMyOpis([false, false, false]) }} target="_blank" href="https://vk.com/role_cards"><VK className={style.Icon1} /></a>
-                    <a onMouseOver={() => { setShowMyOpis([false, true, false]) }} onMouseOut={() => { setShowMyOpis([false, false, false]) }} target="_blank" href="https://github.com/HidasMato/role_cards_creatures"><GH className={style.Icon2} /></a>
-                    <a onMouseOver={() => { setShowMyOpis([false, false, true]) }} onMouseOut={() => { setShowMyOpis([false, false, false]) }} target="_blank" href="https://disk.yandex.ru/d/KOAY4OmjDpAmQg"><YD className={style.Icon3} /></a>
+                    <a onMouseOver={() => { setShowMyOpis([false, false, false, true]) }} onMouseOut={() => { setShowMyOpis([false, false, false, false]) }} target="_blank" href="https://boosty.to/hidasmato"><Boosty className={style.Icon4} /></a>
+                    <a onMouseOver={() => { setShowMyOpis([true, false, false, false]) }} onMouseOut={() => { setShowMyOpis([false, false, false, false]) }} target="_blank" href="https://vk.com/role_cards"><VK className={style.Icon1} /></a>
+                    <a onMouseOver={() => { setShowMyOpis([false, true, false, false]) }} onMouseOut={() => { setShowMyOpis([false, false, false, false]) }} target="_blank" href="https://github.com/HidasMato/role_cards_creatures"><GH className={style.Icon2} /></a>
+                    <a onMouseOver={() => { setShowMyOpis([false, false, true, false]) }} onMouseOut={() => { setShowMyOpis([false, false, false, false]) }} target="_blank" href="https://disk.yandex.ru/d/KOAY4OmjDpAmQg"><YD className={style.Icon3} /></a>
                 </div>
-                {showMyOpis[0] ? <div className={style.Opis}>{"Группа ВК\nЗдесь можно задать вопросы"}</div> : null}
+                {showMyOpis[0] ? <div className={style.Opis}>{"Группа ВК\nЗдесь можно задать вопросы\nУзнать новости"}</div> : null}
                 {showMyOpis[1] ? <div className={style.Opis}>{"Гитхаб\nЗдесь можно посмотреть код"}</div> : null}
                 {showMyOpis[2] ? <div className={style.Opis}>{"Яндекс диск\nЗдесь лежат картинки"}</div> : null}
+                {showMyOpis[3] ? <div className={style.Opis}>{"Бусти\nЗдесь можно задать вопросы\nУзнать новости\nКинуть денежку (опционально)"}</div> : null}
             </div>
             <div className={style.Window}>
                 <CreatureMain />
             </div>
             <div className={style.Down}>
                 <div className={style.U}>{"Для печати карточек нажать CTRL + P, поставить галочку печати фона"}</div>
-                <div className={style.U}>{"Материальное спасибо на замену картриджа: 2202 2022 2252 9913 (сбер)"}</div>
             </div>
         </div>
     );
