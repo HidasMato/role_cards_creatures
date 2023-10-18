@@ -805,7 +805,7 @@ const SpellMain = ({ }: AlertProps): JSX.Element => {
         const A = document.getElementById("ThisIsColorsConst");
         if (A) for (let i = 0; i < sizePoleNames.length; i++) A.style.setProperty(sizePoleNames[i], String(sizePole[i]) + 'px');
         if (A) A.style.setProperty(sizePoleNames[11], String(sizePole[11] - 0.5) + 'mm');
-        if (A) A.style.setProperty(sizePoleNames[12], String(sizePole[12]) + 'mm');
+        if (A) A.style.setProperty(sizePoleNames[12], String(sizePole[12] - 0.5) + 'mm');
     }, [sizePole]);
     useEffect(() => {
         for (let i = 0; i < sizeTextNames.length; i++) document.getElementById("ThisIsColorsConst")?.style.setProperty(sizeTextNames[i], String(sizeText[i]) + 'px');
