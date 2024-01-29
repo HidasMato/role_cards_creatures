@@ -101,15 +101,6 @@ const Card = ({ doubleBack, svitok, cardImg, targetFont, isBack, keyt, Pole, min
                                         {(Pole[11] || Pole[12]) ? <div className={style.Stat + " " + style.Speed}><div className={style.StatTitle}>{Pole[11]}</div><div className={style.StatText}>{Pole[12]}</div></div> : null}
                                         {(Pole[13] || Pole[14]) ? <div className={style.Stat + " " + style.Empty}><div className={style.StatTitle}>{Pole[13]}</div><div className={style.StatText}>{Pole[14]}</div></div> : null}
                                     </div>
-
-                                    {/* <div className={style.StatCase}>
-                                        <div className={style.Stat + " " + style.AC}><div className={style.StatTitle}>{Pole[7]}</div><div className={style.StatText}>{Pole[8]}</div></div>
-                                        <div className={style.Stat + " " + style.HP}><div className={style.StatTitle}>{Pole[9]}</div><div className={style.StatText}>{Pole[10]}</div></div>
-                                    </div>
-                                    <div className={style.StatCase}>
-                                        <div className={style.Stat + " " + style.Speed}><div className={style.StatTitle}>{Pole[11]}</div><div className={style.StatText}>{Pole[12]}</div></div>
-                                        <div className={style.Stat + " " + style.Empty}><div className={style.StatTitle}>{Pole[13]}</div><div className={style.StatText}>{Pole[14]}</div></div>
-                                    </div> */}
                                 </div>
                                 <div className={style.Per + " " + style.Per0}></div>
                                 <div className={style.Skills}>
