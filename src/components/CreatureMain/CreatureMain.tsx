@@ -757,6 +757,7 @@ const SpellMain = ({ }: AlertProps): JSX.Element => {
     const [startPerepolnen, setStartPerepolnen] = useState(0);
     const [isBack, setIsBack] = useState(false);
     const [lineCut, setLineCut] = useState(true);
+    const [lineCutBack, setLineCutBack] = useState(true);
     const [doubleBack, setDoubleBack] = useState(false);
     const fontMas = ["BookerlyBold", "BookerlyBoldItalic", "BookerlyDisplayBoldItalic", "BookerlyDisplay", "BookerlyItalic", "BookerlyLightItalic", "BookerlyLight", "Bookerly", "EtnaFreeFont", "GogonoCocoaMochiCyrillic", "GULAGPavljenko", "HellasDustCyrillic", "MorningBreezeBold", "MorningBreezeItalic", "MorningBreezeLight", "MorningBreeze", "OldSoviet", "SquareMeal", "ZarubkaTypeRegular", "ZaychikRegular"];
     const [targetFont1, setTargetFont1] = useState(7);
@@ -793,6 +794,9 @@ const SpellMain = ({ }: AlertProps): JSX.Element => {
     useEffect(() => {
         document.getElementById("ThisIsColorsConst")?.style.setProperty("--LineCut", lineCut ? '1px' : '0px');
     }, [lineCut]);
+    useEffect(() => {
+        document.getElementById("ThisIsColorsConst")?.style.setProperty("--LineCutBack", lineCutBack ? '1px' : '0px');
+    }, [lineCutBack]);
     useEffect(() => {
         for (let i = 0; i < colorsNames.length; i++) document.getElementById("ThisIsColorsConst")?.style.setProperty(colorsNames[i], colors[i]);
     }, [colors]);
@@ -2920,6 +2924,7 @@ const SpellMain = ({ }: AlertProps): JSX.Element => {
                             myNewSetting = ToString(myNewSetting, blockBorderRadius, 'blockBorderRadius');
                             myNewSetting = ToString(myNewSetting, [blockMinMax], 'blockMinMax');
                             myNewSetting = ToString(myNewSetting, [lineCut], 'lineCut');
+                            myNewSetting = ToString(myNewSetting, [lineCutBack], 'lineCutBack');
                             myNewSetting = ToString(myNewSetting, [doubleBack], 'doubleBack');
                             let blob = new Blob(["\ufeff", myNewSetting], { type: "text;charset=windows-1251" });
                             const url = URL.createObjectURL(blob);
@@ -2984,6 +2989,7 @@ const SpellMain = ({ }: AlertProps): JSX.Element => {
                                         setBlockBorderRadius((FromFile(r as string, 'blockBorderRadius', [...blockBorderRadius]) as boolean[]));
                                         setBlockMinMax((FromFile(r as string, 'blockMinMax', [blockMinMax]) as boolean[])[0]);
                                         setLineCut((FromFile(r as string, 'lineCut', [lineCut]) as boolean[])[0]);
+                                        setLineCutBack((FromFile(r as string, 'lineCutBack', [lineCutBack]) as boolean[])[0]);
                                         setDoubleBack((FromFile(r as string, 'doubleBack', [doubleBack]) as boolean[])[0]);
                                     }
                                 };
@@ -3107,6 +3113,7 @@ const SpellMain = ({ }: AlertProps): JSX.Element => {
                             <OptionSize text={"Рубаха. Перекладина 4"} textAs={"Как 1"} size={sizePole[9]} number={9} setSize={setSizePole} min={0} max={49} block={blockSizePole[9]} setBlock={setBlocSizePole} />
                             <OptionSize text={"Рубаха. Подпись"} textAs={"Как лицо"} size={sizePole[10]} number={10} setSize={setSizePole} min={0} max={49} block={blockSizePole[10]} setBlock={setBlocSizePole} />
                             <div className={style.NumbersExists}><div className={style.Exists} onClick={() => { setLineCut(!lineCut) }}> {"___"} {lineCut && <div />}</div> <p>{"Линия разрезки (лицо)"}</p> </div>
+                            <div className={style.NumbersExists}><div className={style.Exists} onClick={() => { setLineCutBack(!lineCutBack) }}> {"___"} {lineCutBack && <div />}</div> <p>{"Линия разрезки (зад)"}</p> </div>
                             <OptionSize text={"мм Высота листа"} size={sizePole[11]} number={11} setSize={setSizePole} min={50} max={500} block={blockSizePole[11]} setBlock={setBlocSizePole} />
                             <OptionSize text={"мм Ширина листа"} size={sizePole[12]} number={12} setSize={setSizePole} min={50} max={500} block={blockSizePole[12]} setBlock={setBlocSizePole} />
                             <div className={style.ButtonMinMax} onClick={() => {
